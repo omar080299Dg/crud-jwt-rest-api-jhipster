@@ -17,6 +17,10 @@
 ---
 # Conditionally disable springdoc on missing api-docs profile
 spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/restApiApp
+    password: omar
+    username: root
   config:
     activate:
       on-profile: '!api-docs'
